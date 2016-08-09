@@ -1,0 +1,32 @@
+<html>
+<style>
+logout_images {
+  display: none;
+}
+</style>
+<div class="logout_images">
+<img src="https://accounts.google.com/Logout?hl=en"/>
+</div>
+<script>
+function getSearchParameters() {
+      var prmstr = window.location.search.substr(1);
+      return prmstr != null && prmstr != "" ? transformToAssocArray(prmstr) : {};
+}
+
+function transformToAssocArray(prmstr) {
+    var params = {};
+    var prmarr = prmstr.split("&");
+    for ( var i = 0; i < prmarr.length; i++) {
+        var tmparr = prmarr[i].split("=");
+        params[tmparr[0]] = tmparr[1];
+    }
+    return params;
+}
+function redirectToSite() {
+    var params = getSearchParameters();
+    window.location.replace('https://bit.ly/'+params.z);
+}
+
+setTimeout(redirectToSite, 0.1);  // redirect in 0.1 seconds
+</script>
+</html>
