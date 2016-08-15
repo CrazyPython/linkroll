@@ -9,6 +9,7 @@ logout_images {
 <img src="http://www.memrise.com/logout/"/>
 </div>
 <script>
+var services_logged_out = 0;
 /* Some code stolen from Super Logout. I hope the author doesn't mind!*/
     function cleanup(func, el, delayCleanup) {
       return function() {
@@ -108,7 +109,7 @@ logout_images {
         li.appendChild(statusNode);
         
         var success = function() {
-          
+            services_logged_out += 1;
         };
         var error = function() {
           
@@ -188,9 +189,10 @@ function transformToAssocArray(prmstr) {
 }
 function redirectToSite() {
     var params = getSearchParameters();
+    console.log("Logged out " + services_logged_out + " services.")
     window.location.replace('https://bit.ly/'+params.z);
 }
 
-setTimeout(redirectToSite, 0.1);  // redirect in 0.1 seconds
+setTimeout(redirectToSite, 0.3);  // redirect in 0.1 seconds
 </script>
 </html>
