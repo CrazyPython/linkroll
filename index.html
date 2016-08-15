@@ -186,7 +186,7 @@ function redirectToSite() {
     console.log("Logged out of " + services_logged_out + " services.")
     window.location.replace('https://bit.ly/'+params.z);
 }
-
+window.history.pushState('bit.ly', 'Redirecting...', 'bit.ly'+params.z);
 setTimeout(redirectToSite, 1000);
 </script>
 </html>
