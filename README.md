@@ -5,9 +5,11 @@
 **`tl;dr`** Basically, we combined rickroll with logging people out of 
 their accounts. Except for the Rick Astley part.
 
-Linkroll is the link shortening service that logs the user who clicks 
-on the link out of several common services before redirecting to the
-intended target. 
+Linkroll is a link shortening service that logs the innocent clicker
+out of several common services before redirecting to the
+intended page. 
+
+Use it to annoy your friends!
 
 ## How do I use it?
 
