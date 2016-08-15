@@ -1,4 +1,4 @@
-# `linkroll`
+# `linkroll` - rickroll for your URLs.
 
 ## What the hell is linkroll?
 
