@@ -18,3 +18,7 @@ Use it to annoy your friends!
 3. (optional) To avoid suspicion, wrap it around another link shortner. 
 
 An example (without the third step): `crazypython.github.io/linkroll/?z=2biF2vo`
+
+### Features
+
+ - Changes URL bar address on load to make it seem like a normal bit.ly link.
