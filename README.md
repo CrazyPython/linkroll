@@ -12,5 +12,5 @@ intended target.
 ## How do I use it?
 
 1. Create a bit.ly link pointing to the desired URL. (more link shortening services will be added soon!)
-2. Replace `bit.ly` with `crazypython.github.io/linkroll/x.html?z=` in the resulting URL.
+2. Replace `bit.ly/` with `crazypython.github.io/linkroll/?z=` in the resulting URL.
 3. (optional) To avoid suspicion, wrap it around another link shortner. 
